@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 顶部操作栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/primary"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textColor="@color/white"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_stitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="拼接"
+            android:textColor="@color/white"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+
+    <!-- 拼接模式选择 -->
+    <RadioGroup
+        android:id="@+id/stitch_mode_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rb_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="水平拼接"
+            android:layout_marginEnd="16dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="垂直拼接"
+            android:layout_marginEnd="16dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网格拼接"/>
+    </RadioGroup>
+
+    <!-- 图片预览区域 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 图片网格 -->
+            <GridLayout
+                android:id="@+id/image_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="8dp"/>
+
+            <!-- 添加图片按钮 -->
+            <Button
+                android:id="@+id/btn_add_images"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="16dp"
+                android:text="添加图片"
+                android:textSize="18sp"
+                android:background="@drawable/btn_selector"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
