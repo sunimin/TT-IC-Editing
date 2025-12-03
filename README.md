@@ -11,16 +11,6 @@
 - **图片拼接**：将多张图片水平、垂直或网格布局组合
 - **夜间模式**：在浅色和深色主题之间切换
 
-## 截图展示
-
-主界面             |  编辑界面          |  裁剪界面
-:---------------------:|:----------------------:|:--------------------:
-![image-20251203185026246](D:\AndroidWork\TT-IC-Editing\HomeWork012\picture\image-20251203185026246.png)  | ![image-20251203185125763](D:\AndroidWork\TT-IC-Editing\HomeWork012\picture\image-20251203185125763.png) | ![image-20251203185153753](D:\AndroidWork\TT-IC-Editing\HomeWork012\picture\image-20251203185153753.png) 
-
-拼接界面          |  滤镜选项         |  文字叠加
-:---------------------:|:----------------------:|:--------------------:
-![image-20251203185245011](D:\AndroidWork\TT-IC-Editing\HomeWork012\picture\image-20251203185245011.png) | ![image-20251203185307455](D:\AndroidWork\TT-IC-Editing\HomeWork012\picture\image-20251203185307455.png) | ![image-20251203185354922](D:\AndroidWork\TT-IC-Editing\HomeWork012\picture\image-20251203185354922.png) 
-
 ## 环境要求
 
 - Android SDK API 24 或更高版本
